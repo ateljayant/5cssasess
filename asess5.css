@@ -1,0 +1,102 @@
+body{
+    background-color: yellow;
+    margin: 0px;
+}
+.cards{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+}
+.card{
+    height: 100px;
+    width: 100px;
+    margin:30px;
+    padding: 10px;
+}
+.cardX{
+    background-color: #3d7e6f;
+    animation:alternate-reverse darcy 3s infinite 1s;
+}
+@keyframes darcy {
+    from{
+         transform:skewX(20deg);
+    }
+    to{
+        transform:skewX(-20deg);
+    }
+
+}
+.cardY{
+    background-color: #acacac;
+    animation:alternate-reverse darcy1 2s infinite 0s;
+
+}
+@keyframes darcy1{
+    from{
+         transform:skewY(20deg);
+    }
+    to{
+        transform:skewY(-20deg);
+    }
+
+}
+.cardZ{
+    background-color: #3d7e6f;
+    animation:normal darcy2 3s infinite 0s;
+}
+@keyframes darcy2{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.cardR{
+    background-color: #3d7e6f;
+    border: 3px solid #10765e;
+    animation:alternate darcy3 4s infinite 0s;
+}
+@keyframes darcy3{
+    from{
+        transform: rotateX(60deg);
+    }
+    to{
+        transform: rotateX(-60deg);
+    }
+}
+.cardP{
+    background-color: brown;
+    border: 3px solid #752b2b;
+    animation:alternate darcy4 4s infinite 0s;
+}
+@keyframes darcy4{
+    from{
+        transform: rotateY(70deg);
+    }
+    to{
+         transform: rotateY(-70deg);
+    }   
+}
+.cardM{
+    background-color:green;
+    border: 3px solid #1f712b;
+    animation: alternate darcy5 2s infinite 0s;
+}
+@keyframes darcy5{
+    from{
+        transform: rotateZ(10deg);
+    }
+    to{
+        transform: rotateZ(-90deg);
+    }
+}
+.heading{
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
